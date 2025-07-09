@@ -42,13 +42,13 @@ class BasePage:
     def element_till_clickable(self, locator, by_type=By.XPATH):
         WebDriverWait(self.driver, 15).until(EC.element_to_be_clickable((by_type, locator))).click()
     
-        def wait_till_element_invisible(self, locator: str, by_type=By.XPATH):
+    def wait_till_element_invisible(self, locator: str, by_type=By.XPATH):
         self.wait.until(EC.invisibility_of_element((by_type, locator)))
 
     def wait_till_element_present(self, locator: str, by_type=By.XPATH):
         self.wait.until(EC.presence_of_all_elements_located((by_type, locator)))
 
-        def wait_till_alert_present(self):
+    def wait_till_alert_present(self):
         self.wait.until(EC.alert_is_present())
 
     def wait_for_element_to_load(self, locator: str):
@@ -67,7 +67,7 @@ class BasePage:
     def move_to_offset(self, x_offset=5, y_offset=5):
         self.action.move_by_offset(x_offset, y_offset).perform()
 
-        def goto_url(self, url):
+    def goto_url(self, url):
         self.driver.get(url)
 
     def refresh_window(self):
