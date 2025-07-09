@@ -24,31 +24,31 @@ class Test_Practice_demo:
 
         time.sleep(10)
 
-    # def tables_static_dynamic(self):
-    #     tables = TableActions(init_browser)
-    #     tables.normaltable()
-    #
-    # def send_data_field(self):
-    #     pass_text = Provide_input(init_browser)
-    #     pass_text.send_data()
-    #
-    # def droupdown_list(self):
-    #     ddl = DropDownList(init_browser)
-    #     ddl.dropdownlist()
-    #
-    # def mousoveractions(self):
-    #     moa = Mouse_action(init_browser)
-    #     moa.mouse_actions()
-    #
-    # def aleractions(self):
-    #     alert_message = Alert_options(init_browser)
-    #     alert_message.alertoptions()
-    #
-    # def brokenlinks(self):
-    #     link = Broken_links(init_browser)
-    #     link.brokenlinks()
-    #
-    # def multi_win_handle(self):
-    #     winoptions = WindowOptions(init_browser)
-    #     winoptions.multiwin()
+    def tables_static_dynamic(self):
+        tables = TableActions(init_browser)
+        tables.normaltable()
+    
+    def send_data_field(self):
+        pass_text = Provide_input(init_browser)
+        pass_text.send_data()
+    
+    def droupdown_list(self):
+        ddl = DropDownList(init_browser)
+        ddl.dropdownlist()
+    
+    def mousoveractions(self):
+        moa = Mouse_action(init_browser)
+        moa.mouse_actions()
+    
+    def aleractions(self):
+        alert_message = Alert_options(init_browser)
+        alert_message.alertoptions()
+    
+    def brokenlinks(self):
+        link = Broken_links(init_browser)
+        link.brokenlinks()
+    
+    def multi_win_handle(self):
+        winoptions = WindowOptions(init_browser)
+        winoptions.multiwin()
 
